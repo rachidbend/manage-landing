@@ -40,12 +40,14 @@ a {
 }
 
 /* HEADER section */
+/* ------------------------------------------------- */
 .header {
   padding: 0 2.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 4rem;
+  margin-bottom: 4.8rem;
 }
 .logo-link {
   display: inline-block;
@@ -84,6 +86,7 @@ a {
   gap: 2.6rem;
   border-radius: 0.4rem;
 }
+
 .body-lock {
   position: fixed;
 }
@@ -124,4 +127,35 @@ a {
 }
 .active .nav-close {
   display: inline-block;
+}
+
+/* END HEADER section */
+/* ------------------------------------------------- */
+/* HERO section */
+
+.hero {
+  padding: 0 2.4rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.hero__content {
+}
+.heading-primary {
+  font-size: 3.6rem;
+  color: var(--color-blue);
+  margin-bottom: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.1rem;
+}
+.hero__text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-primary-300);
+  margin-bottom: 3.4rem;
+  line-height: 1.4;
+}
+.btn--hero {
+}
+.hero__illustration {
 }
