@@ -11,32 +11,38 @@
       sizes="32x32"
       href="./images/favicon-32x32.png" />
 
-    <title>Manage landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="src/script.js" defer></script>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>Manage landing page</title>
   </head>
   <body>
     <header class="header">
-      <img class="logo" src="images/logo.svg" alt="logo" />
+      <a class="logo-link" href="#">
+        <img class="logo" src="images/logo.svg" alt="logo" />
+      </a>
       <nav class="nav nav--primary">
-        <ul>
-          <li><a href="">pricing</a></li>
-          <li><a href="">product</a></li>
-          <li><a href="">about us</a></li>
-          <li><a href="">careers</a></li>
-          <li><a href="">community</a></li>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="">pricing</a></li>
+          <li class="nav__item"><a class="nav__link" href="">product</a></li>
+          <li class="nav__item"><a class="nav__link" href="">about us</a></li>
+          <li class="nav__item"><a class="nav__link" href="">careers</a></li>
+          <li class="nav__item"><a class="nav__link" href="">community</a></li>
         </ul>
       </nav>
       <button class="btn btn--header">Get Started</button>
+      <div class="mobile-nav">
+        <img
+          class="nav-open"
+          src="images/icon-hamburger.svg"
+          alt="hamburger icon" />
+        <img class="nav-close" src="images/icon-close.svg" alt="close icon" />
+      </div>
     </header>
 
     <section class="hero">
@@ -157,14 +163,28 @@
         </a>
       </div>
       <nav class="footer-nav">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Careers</a></li>
-          <li><a href="">Community</a></li>
-          <li><a href="">Privacy Policy</a></li>
+        <ul class="footer-nav__list">
+          <li class="footer_nav--item">
+            <a class="footer_nav--link" href="">Home</a>
+          </li>
+          <li class="footer_nav--item">
+            <a class="footer_nav--link" href="">Pricing</a>
+          </li>
+          <li class="footer_nav--item">
+            <a class="footer_nav--link" href="">Products</a>
+          </li>
+          <li class="footer_nav--item">
+            <a class="footer_nav--link" href="">About Us</a>
+          </li>
+          <li class="footer_nav--item">
+            <a class="footer_nav--link" href="">Careers</a>
+          </li>
+          <li class="footer_nav--item">
+            <a class="footer_nav--link" href="">Community</a>
+          </li>
+          <li class="footer_nav--item">
+            <a class="footer_nav--link" href="">Privacy Policy</a>
+          </li>
         </ul>
       </nav>
       <div class="updates">
