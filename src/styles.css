@@ -240,7 +240,7 @@ a {
   margin-left: 2.4rem;
   gap: 1.4rem;
   background-color: var(--color-primary-200);
-  border-radius: 0 0 5rem 5rem;
+  border-radius: 5rem 0 0 5rem;
   margin-bottom: 1rem;
   color: var(--color-blue);
   font-size: 1.6rem;
