@@ -12,6 +12,7 @@
   --color-red: hsl(12, 88%, 59%);
   --color-blue: hsl(228, 39%, 23%);
   --color-red-faded: hsl(15, 100%, 96%);
+  --color-white: hsl(0, 0%, 100%);
 
   --font-primary: 'Be Vietnam Pro', sans-serif; /* possible font weights: 400, 500, 700 */
 }
@@ -20,7 +21,7 @@ html {
   font-size: 62.5%; /* 1rem = 10px */
   font-family: var(--font-primary);
   font-weight: 500;
-  background-color: var(--color-primary-100);
+  background-color: var(--color-white);
 }
 
 img {
