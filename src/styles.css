@@ -255,3 +255,51 @@ a {
   letter-spacing: -0.05rem;
   padding: 0 2.4rem;
 }
+
+/* END FEATURE section */
+/* ------------------------------------------------- */
+/* TESTIMONIALS section */
+.testimonials {
+  padding: 0 2.4rem;
+}
+.testimonials__container {
+}
+.testimonials .heading-secondary {
+  margin-bottom: 9.6rem;
+  padding: 0;
+}
+.testimonial {
+  background-color: var(--color-primary-100);
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+  position: relative;
+  padding: 5rem 1.2rem 3.2rem 1.2rem;
+}
+.testimonial__avatar {
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -3.6rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.testimonial-heading {
+  font-size: 1.6rem;
+  color: var(--color-primary-400);
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.1rem;
+}
+
+.testimonial-text {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: var(--color-primary-300);
+  font-weight: 500;
+  /* letter-spacing: -0.05rem; */
+  text-align: center;
+}
