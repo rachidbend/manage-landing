@@ -30,6 +30,7 @@ const testimonialsEls = document.querySelectorAll('.testimonial');
 const testimonialButtonsContainerEl = document.querySelector(
   '.testimonials__buttons-container'
 );
+const container = document.querySelector('.testimonials__container');
 
 let curPosition = 0;
 const maxSlide = testimonialsEls.length;
@@ -55,20 +56,36 @@ function activateDot(slide) {
 }
 
 function goToSlide(slide) {
+  curPosition = slide;
   testimonialsEls.forEach((s, index) => {
     s.style.transform = `translateX(${(index - slide) * 100}%)`;
   });
 }
 
-function changeSlide() {
-  let curSlide = 0;
+let interval;
+function startAutoSlide() {
   const maxSlides = testimonialsEls.length;
-  setInterval(() => {
-    if (curSlide >= maxSlides) curSlide = 0;
-    goToSlide(curSlide);
-    activateDot(curSlide);
-    curSlide++;
+  interval = setInterval(() => {
+    if (curPosition >= maxSlides) curPosition = 0;
+    goToSlide(curPosition);
+    activateDot(curPosition);
+    curPosition++;
   }, 5000);
+}
+
+function stopAutoSlide() {
+  clearInterval(interval);
+}
+function changeSlide() {
+  startAutoSlide();
+
+  // Pause on hover (desktop)
+  container.addEventListener('mouseenter', stopAutoSlide);
+  container.addEventListener('mouseleave', startAutoSlide);
+
+  // Pause on touch (mobile)
+  container.addEventListener('touchstart', stopAutoSlide);
+  container.addEventListener('touchend', startAutoSlide);
 }
 
 function init() {
