@@ -260,6 +260,7 @@ a {
 /* END FEATURE section */
 /* ------------------------------------------------- */
 /* TESTIMONIALS section */
+
 .testimonials {
   padding: 0 2.4rem;
 }
@@ -270,7 +271,7 @@ a {
   overflow: hidden;
 }
 .testimonials .heading-secondary {
-  margin-bottom: 9.6rem;
+  margin-bottom: 6rem;
   padding: 0;
 }
 .testimonial {
@@ -320,6 +321,11 @@ a {
   justify-content: center;
   gap: 0.3rem;
 }
+.testimonials__btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4.2rem;
+}
 .testimonials__button {
   width: 0.9rem;
   height: 0.9rem;
@@ -334,3 +340,4 @@ a {
 }
 /*  END TESTIMONIALS section */
 /* ------------------------------------------------- */
+/*  CTA section */
