@@ -618,3 +618,127 @@ a {
     padding: 5rem 16.4rem 3.2rem 16.4rem;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 115rem;
+    margin: 0 auto;
+    margin-bottom: 11rem;
+    padding-top: 4rem;
+    gap: 0;
+  }
+  .logo-link {
+    display: inline-block;
+  }
+  .logo {
+    width: 11rem;
+  }
+
+  /* NAVIGATION */
+  .nav--primary {
+    display: block;
+    position: static;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+    padding: 0;
+    padding-top: 0;
+    background: none;
+    overflow: auto;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: auto;
+    z-index: auto;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background: none;
+    padding: 0;
+    list-style: none;
+    gap: 3.3rem;
+    height: auto;
+    border: none;
+    max-width: max-content;
+    margin: 0 auto;
+  }
+  .mobile-nav {
+    display: none;
+  }
+
+  .nav__link {
+    color: var(--color-blue);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 0.4rem;
+  }
+  .nav__link:hover {
+    color: var(--color-red);
+  }
+  .nav__link:active {
+    color: var(--color-primary-300);
+  }
+  .btn--header {
+    display: inline-block;
+  }
+
+  .nav-open {
+  }
+  .nav-close {
+    display: none;
+  }
+  /* hero section */
+
+  .hero {
+    padding: 0 2.4rem;
+    max-width: 115rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    gap: 4rem;
+    margin-bottom: 9.6rem;
+    position: relative;
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    max-width: max-content;
+    margin: 0 auto;
+  }
+  .heading-primary {
+    font-size: 5.2rem;
+    color: var(--color-blue);
+    margin-bottom: 4.2 rem;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.1rem;
+    text-align: left;
+  }
+  .hero__text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-primary-300);
+    margin-bottom: 4rem;
+    line-height: 1.4;
+    text-align: left;
+    max-width: 35rem;
+  }
+
+  .hero__illustration {
+    max-width: max-content;
+    margin: 0;
+  }
+}
