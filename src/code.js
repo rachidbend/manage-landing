@@ -91,7 +91,7 @@ function activateDot(slide) {
 function goToSlide(slide) {
   curPosition = slide;
   testimonialsEls.forEach((s, index) => {
-    s.style.transform = `translateX(${(index - slide) * 100}%)`;
+    s.style.transform = `translateX(${(index - slide) * 110}%)`;
   });
 }
 

@@ -699,15 +699,12 @@ a {
   /* hero section */
 
   .hero {
-    padding: 0 2.4rem;
     max-width: 115rem;
-    display: flex;
     flex-direction: row;
     align-items: center;
     margin: 0 auto;
     gap: 4rem;
-    margin-bottom: 9.6rem;
-    position: relative;
+    margin-bottom: 10.7rem;
   }
 
   .hero__content {
@@ -716,23 +713,15 @@ a {
     align-items: start;
     justify-content: center;
     max-width: max-content;
-    margin: 0 auto;
+    margin: 0;
   }
   .heading-primary {
     font-size: 5.2rem;
-    color: var(--color-blue);
     margin-bottom: 4.2 rem;
-    font-weight: 700;
-    line-height: 1.4;
-    letter-spacing: -0.1rem;
     text-align: left;
   }
   .hero__text {
     font-size: 1.6rem;
-    font-weight: 500;
-    color: var(--color-primary-300);
-    margin-bottom: 4rem;
-    line-height: 1.4;
     text-align: left;
     max-width: 35rem;
   }
@@ -741,4 +730,96 @@ a {
     max-width: max-content;
     margin: 0;
   }
+  /* FEATURE section */
+
+  .features__content {
+    margin-bottom: 0;
+  }
+  .heading-secondary {
+    font-size: 2.8rem;
+    color: var(--color-blue);
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    padding: 0;
+
+    margin-bottom: 1.8rem;
+  }
+  .features-text {
+    font-size: 1.6rem;
+    max-width: 35rem;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+  /* features */
+  .features {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 115rem;
+    margin: 0 auto;
+    margin-bottom: 13rem;
+    padding: 0 2.4rem;
+  }
+
+  .feature {
+    margin-bottom: 2.6rem;
+  }
+
+  .heading--feature {
+    margin-left: 0;
+    gap: 2.8rem;
+    border-radius: 0;
+    margin-bottom: 1.4rem;
+    background: none;
+  }
+  .feature-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0 0 0 9.4rem;
+  }
+
+  /* END FEATURE section */
+  /* TESTIMONIALS section */
+
+  .testimonials {
+    padding: 0;
+    margin-bottom: 18rem;
+  }
+  .testimonials__container {
+    min-height: 30rem;
+    overflow: visible;
+    max-width: 54rem;
+  }
+  .testimonials .heading-secondary {
+    margin-bottom: 7.4rem;
+    padding: 0;
+    text-align: center;
+    font-size: 3.8rem;
+  }
+  .testimonial {
+    max-width: 54rem;
+    margin-bottom: 0;
+    padding: 4.8rem 2rem 6rem 4rem;
+  }
+
+  .testimonial-heading {
+    margin-bottom: 2.6rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.6rem;
+  }
+
+  .testimonials__buttons-container {
+    display: none;
+  }
+  .testimonials__btn-container {
+    margin-bottom: 0;
+  }
+
+  /*  END TESTIMONIALS section */
 }
